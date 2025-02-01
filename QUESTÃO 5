@@ -1,0 +1,12 @@
+function inverterString(str) {
+   if (typeof str !== 'string' || str.length === 0) {
+    return "String inválida ou vazia.";
+  }
+
+  let stringInvertida = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    stringInvertida += str[i];
+  }
+
+  return stringInvertida;
+}
