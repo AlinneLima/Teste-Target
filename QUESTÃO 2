@@ -1,0 +1,18 @@
+function fibonacci(limite) {
+  const sequencia = [0, 1];
+  while (sequencia[sequencia.length - 1] < limite) {
+    const proximoNumero = sequencia[sequencia.length - 1] + sequencia[sequencia.length - 2];
+    sequencia.push(proximoNumero);
+  }
+  return sequencia;
+}
+
+function verificarPertinencia(numero, sequencia) {
+  return sequencia.includes(numero);
+}
+
+if (verificarPertinencia(numero, sequenciaFibonacci)) {
+  console.log(`O número ${numero} pertence à sequência de Fibonacci.`);
+} else {
+  console.log(`O número ${numero} não pertence à sequência de Fibonacci.`);
+}
